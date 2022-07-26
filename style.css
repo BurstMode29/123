@@ -1,0 +1,480 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: 'Baloo 2', cursive;
+
+}
+
+/* Navigation */
+
+/* The Overlay Background */
+span img{
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-top: 5vw;
+  cursor: pointer;
+  -webkit-animation: img 1s ease-in-out infinite alternate;
+  -moz-animation: img 1s ease-in-out infinite alternate;
+  animation: img 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes img {
+  from {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    box-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+span img:hover {
+  padding: 2vw 3vw;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-image: url(/images/5172658.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 80%;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: aliceblue;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #e60073;
+}
+
+@media screen and (max-height:450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+/* /Navigation */ 
+
+
+
+
+
+
+/*--Home--*/
+
+    .home{
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .home h1{
+      font-size: 9vw;
+      color: white;
+      text-align: left;
+      padding-top: 10vw;
+      padding-left: 20px;
+    }
+
+    .home p{
+      padding-left: 30px;
+      font-size: 3vw;
+      padding-bottom: 200px;
+      color: white;
+      text-align: left;
+    }
+
+    span{
+      color: rgb(255, 255, 255);
+    }
+
+/*--/Home--*/
+
+
+
+
+/*--About--*/
+    .about{
+      background-image: url();
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .about button {
+      background-image: url(/images/5172658.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: #1a73e8;
+      border-style: solid;
+    }
+
+    
+
+    .modal-open {
+      font-size: 7vw;
+      padding: 8px 20px;
+      margin-bottom: 50px;
+      background: transparent;
+      color: rgb(255, 255, 255);
+      border-radius: 10px;
+      outline: none;
+      border: none;
+    }
+
+    .modal-open:hover{
+      padding: 5vw;
+      color: #e60073;
+      cursor: pointer;
+    }
+
+    .modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0,0,0,0.5);
+      z-index: 2;
+      overflow: auto;
+      display: none;
+      animation: modal-open .5s;
+    }
+
+    .modal-content {
+      background: rgb(78, 78, 78);
+      margin-top: 100px;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 8px 24px;
+      border-radius: 4px;
+      z-index: 4;
+    }
+
+    .modal-header {
+      color: white;
+      font-weight: 500;
+      font-size: 5vw;
+    }
+
+    .modal-header i{
+      color: #1a73e8;
+    }
+
+    .modal-header .modal-close{
+      float: right;
+      font-size: 5px;
+      background-color: transparent;
+      border: 0;
+      outline: 0;
+      padding: 5px;
+    
+    }
+
+    .modal-body {
+      color: #ffffff;
+      padding: 15px 0;
+      
+    }
+
+    .modal-body p{
+      text-align: left;
+      font-size: 2vw;
+    }
+
+    .modal-body h1{
+      font-size: 3vw;
+      text-align: left;
+      color: #1a73e8;
+    }
+
+    .modal-body ul li{
+      text-align: left;
+      list-style-type: none;
+      font-size: 2vw;
+    }
+
+    .modal-footer {
+      padding: 15px 0;
+    }
+
+    .modal-footer .modal-close {
+      padding: 8px 16px;
+      font-size: 14px;
+      border: none;
+      outline: none;
+      border-radius: 4px;
+      color: #1a73e8;
+    }
+
+    @keyframes modal-open{
+      from{
+        opacity: 0;
+      }
+      to{
+        opacity: 1;
+      }
+    }
+
+
+/*--/About--*/
+
+
+
+/*--Work--*/
+
+    .work h2{
+    color: white;
+    font-size: 9vw;
+    }
+
+    .work p{
+
+    font-size: 2vw;
+    color: white;
+    box-sizing: border-box;
+    }
+
+    .grid-container {
+    font-size: 2vw;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    
+    }
+
+    .grid-item1 {
+      background-image: url(/images/web\ design.jpg);
+      background-size: cover;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 5vw 1vw;
+      text-align: center;
+      color: rgb(0, 116, 248);
+      border-radius: 5px;
+      
+    
+    }
+
+    a {
+      text-decoration-line: none;
+      color: transparent;
+    }
+
+    a:hover{
+    color: #ff4da6;
+    }
+
+    .grid-item2 {
+      background-image: url(/images/SL_071219_21480_25.jpg);
+      background-size: cover;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 5vw 1vw;
+      text-align: center;
+      color: rgb(0, 119, 255);
+      border-radius: 5px;
+      margin-left: 5px;
+    
+    }
+
+    .grid-item3 {
+
+      background-image: url(/images/4238568.jpg);
+      background-size: cover;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 5vw 1vw;
+      text-align: center;
+      color: rgb(0, 162, 255);
+      border-radius: 5px;
+      margin-left: 5px;
+    
+    }
+
+  .grid-item1:hover {
+    padding: 5vw;
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
+
+  .grid-item2:hover {
+    padding: 5vw;
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
+
+  .grid-item3:hover {
+    padding: 5vw;
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+
+/*--/Work--*/
+
+
+
+
+/*--Contact--*/
+
+  #contactForm{
+    display: inline-block;
+  }
+
+    .contact{
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .contact h3{
+    color: white;
+    font-size: 7vw;
+    }
+
+    .name{
+    padding: 2vw 20vw ;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border-style: none;
+    }
+
+
+
+    .email{
+    padding: 2vw 20vw;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border-style: none;
+    }
+
+    .message{
+    padding: 10vw 20vw;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-style: none;
+    }
+
+    .submit{
+    padding: 1vw 2vw;
+    float: right;
+    color: rgb(0, 0, 0);
+    border-style: none;
+    border-radius: 5px;
+    }
+
+    .submit:hover{
+    background-color: #e60073;
+    color: aquamarine;
+    }
+
+    p{
+    color: white;
+    font-size: 2vw;
+    }
+/*--/Contact--*/
+
+/*--Footer--*/
+
+    i{
+        font-size: 5vw;
+         padding: 20px;
+         color: white;
+    }
+    
+    footer{
+        background-color: transparent;
+    }
+
+    .icons{
+        justify-content: space-between;
+        padding: 2vw 4vw;
+    }
+
+     i:hover {
+      color: #e60073;  
+    }
+
+/*--/Footer--*/
+
+
+
+/*--Gallery In Modal--*/
+  .row {
+    margin: 8px -16px;
+  }
+
+  /* Add padding BETWEEN each column */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+
+  /* Create four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 25%;
+  }
+
+  /* Clear floats after rows */ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Content */
+  .content {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+  }
+
+  /* Responsive layout - makes a two column-layout instead of four columns */ 
+  @media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+/*--Gallery In Modal--*/
