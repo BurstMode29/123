@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: 'Baloo 2', cursive;
+
+}
+
+/* Navigation */
+
+/* The Overlay Background */
+span img{
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-top: 5vw;
+  cursor: pointer;
+  -webkit-animation: img 1s ease-in-out infinite alternate;
+  -moz-animation: img 1s ease-in-out infinite alternate;
+  animation: img 1s ease-in-out infinite alternate;
+  transition: 0.3s;
+}
+
+@-webkit-keyframes img {
+  from {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    box-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+span img:hover {
+  opacity: 0.5;
+  padding: .5vw 1vw;
+  overflow: hidden;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-image: url(/images/5172658.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 90%;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 5vw;
+  color: aliceblue;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #e60073;
+}
+
+@media screen and (max-height:250px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+/* /Navigation */ 
+
+
+/*   Modal Box */
+.modal-open {
+    font-size: 2vw;
+    padding: 8px 20px;
+    margin-bottom: 50px;
+    background: transparent;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    transition: 0.3s;
+  }
+
+  .modal-open:hover{
+    opacity: 0.7;
+    color: #e60073;
+    cursor: pointer;
+  }
+
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 2;
+    overflow: auto;
+    display: none;
+    animation: modal-open .5s;
+  }
+
+  .modal-content {
+    background: rgb(78, 78, 78);
+    margin-top: 100px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px 24px;
+    border-radius: 4px;
+    z-index: 4;
+  }
+
+  .modal-header {
+    color: white;
+    font-weight: 500;
+    font-size: 5vw;
+  }
+
+  .modal-header i{
+    color: #1a73e8;
+  }
+
+  .modal-header .modal-close{
+    float: right;
+    font-size: 5px;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    padding: 5px;
+  
+  }
+
+  .modal-body {
+    color: #ffffff;
+    padding: 15px 0;
+    
+  }
+
+  .modal-body p{
+    text-align: left;
+    font-size: 2vw;
+  }
+
+  .modal-body h1{
+    font-size: 3vw;
+    text-align: left;
+    color: #1a73e8;
+  }
+
+  .modal-body ul li{
+    text-align: left;
+    list-style-type: none;
+    font-size: 2vw;
+  }
+
+  .modal-footer {
+    padding: 15px 0;
+  }
+
+  .modal-footer .modal-close {
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    color: #1a73e8;
+  }
+
+  @keyframes modal-open{
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }
+
+
+
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    margin: 10vw 10vw;
+  }
+
+
+  .box1 {
+    font-size: 2vw;
+    border-radius: 10px;
+    display: inline-block;
+    background-color: #ffffff;
+    padding: 15vw 15vw;
+    box-shadow: black;
+  }
+
+  .box1:hover {
+    opacity: 0.7;
+  }
+
+  .box2 {
+    font-size: 2vw;
+    border-radius: 10px;
+    display: inline-block;
+    background-color: #ffffff;
+    padding: 15vw 15vw;
+  }
+
+  .box2:hover {
+    opacity: 0.7;
+  }
+
+
+  /*--Footer--*/
+
+    i{
+        font-size: 5vw;
+         padding: 20px;
+         color: white;
+    }
+    
+    footer{
+        background-color: transparent;
+    }
+
+    .icons{
+        justify-content: space-between;
+        padding: 2vw 4vw;
+    }
+
+     i:hover {
+      color: #e60073;  
+    }
+
+/*--/Footer--*/

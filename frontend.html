@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" type="image/x-icon" href="/images/62be683e56c6419c9a2e0093f7eedb87.png">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Front-End</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style1.css">
+
+        <!--Font-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap" rel="stylesheet">
+		<!--/Font-->
+		
+		<script src="https://kit.fontawesome.com/8e877c6729.js" crossorigin="anonymous"></script>
+
+        <style>
+            body{background-color: black; background-image: url(/images/background.jpg);background-repeat: no-repeat;background-size: cover;box-shadow: 4vw 4vw 50vw inset;}
+            a {
+                color: white;
+                text-decoration-line: none;
+            }
+
+            a:hover {
+                color: rgb(7, 201, 255);
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <!--Navigation-->
+		
+		<header>
+			
+			
+			<nav id="myNav" class="overlay">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<ul class="overlay-content">
+					<li><a href="/index.html">HOME</a></li>
+					<li><a href="#about">ABOUT</a></li>
+					<li><a href="#work">WORK</a></li>
+					<li><a href="#contact">CONTACT</a></li>
+				</ul>
+				
+			</nav>
+			
+			<span onclick="openNav()"><img style="height: 17vw; width: 17vw;" src="/images/62be683e56c6419c9a2e0093f7eedb87.png"></span><br><br>
+            
+            <h1 style="font-size: 7vw;color:white;">Welcome to my<br>Work Page!</h1><br><br>
+            <p style="font-size: 2.5vw;color:white;">Have a look around see what might interest you, here you'll find all my projects.</p><br>
+            <p style="font-size: 2.5vw;color:white;">Every block is a project, some is blank so try to ignore those.</p><br>
+		</header>	
+		
+        
+		<!--/Navigation-->
+                
+        <!--Work-->
+            <div class="content">
+
+                
+
+                <a href="#"><button class="modal-open" data-modal="modal1"><div class="box1" class="modal-open" data-modal="modal1" style="background-image:url(/images/Macro\ Lillypad\ Logo.png);background-repeat: no-repeat;background-size: 30vw 30vw;"></div><br>MACRO LILLYPAD</a></button>
+                <br>
+                <a href="#"><div class="box2" style="background-image:url();background-repeat: no-repeat;background-size: 30vw 30vw;"></div><br>Coming Soon!</a>
+
+                <!--Modals-->
+			<div class="modal" id="modal1">
+				<div class="modal-content">
+					<div class="modal-header">MACRO LILLYPAD<br><hr>
+						
+					</div>
+					<div class="modal-body">
+                        <p>This is my first project I did at Younglings Africa, hard coded everything from nav to footer. It took me one month to complete this project, have a look at the image its a quick visual presentation, also to view demo site click the button.</p><br>
+						<img src="/images/MACRO LILLYPAD.gif" style="height: 60vw;width: 50vw;"><br>
+                        <p>The project was randomly assigned to me by my guild leader, long story short I had to finish the site to practice and test my skills in front-end development and design.</p><br>
+                        <p>View the dummy site below!</p><br>
+
+                        <a href="/Macro Lillypad/landing.html" target="_blank" style="background-color: rgba(0, 221, 255, 0.62); border-radius: 10px;padding: 1vw 1vw">View Dummy Site</a>
+
+
+						
+						
+
+                    </div>
+					<div class="modal-footer"><div class="icons">
+						<i class="fa-brands fa-facebook"></i>
+						<i class="fa-brands fa-instagram"></i>
+						<i class="fa-brands fa-github"></i>
+					</div></div>
+				</div>
+			</div>
+
+            </div>
+    
+  
+        
+        <script src="main.js" async defer></script>
+    </body>
+</html>
+
+<!--Footer-->
+
+<footer>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <a href="https://github.com/BurstMode29"><i class="fa-brands fa-github"></i></a>
+        
+    </div>
+</footer>
+
+<!--/Footer-->
