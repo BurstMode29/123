@@ -1,34 +1,20 @@
 *{
-    margin: 0;
+    margin: 1;
     padding: 0;
     text-align: center;
     box-sizing: border-box;
     font-family: 'Baloo 2', cursive;
-
 }
 
 /* Navigation */
 
 /* The Overlay Background */
-span img{
-  background-color: #ffffff;
-  border-radius: 10px;
-  margin-top: 5vw;
-  cursor: pointer;
-  -webkit-animation: img 1s ease-in-out infinite alternate;
-  -moz-animation: img 1s ease-in-out infinite alternate;
-  animation: img 1s ease-in-out infinite alternate;
-  transition: 0.3s;
-}
 
-@-webkit-keyframes img {
-  from {
-    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-  }
-  
-  to {
-    box-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-  }
+
+span img{
+  position: absolute;
+  display: flex;
+  cursor: pointer;
 }
 
 span img:hover {
@@ -44,7 +30,7 @@ span img:hover {
   z-index: 1;
   left: 0;
   top: 0;
-  background-image: url(/images/5172658.jpg);
+  background-color: #30573c;
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 90%;
@@ -63,23 +49,10 @@ span img:hover {
 .overlay a {
   padding: 8px;
   text-decoration: none;
-  font-size: 2vw;
+  font-size: 3vw;
   color: aliceblue;
   display: block;
   transition: 0.3s;
-}
-
-.overlay a:hover, .overlay a:focus {
-  color: #e60073;
-}
-
-@media screen and (max-height:250px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
 }
 
 /* /Navigation */ 
@@ -91,17 +64,11 @@ span img:hover {
 
 /*--Home--*/
 
-    .home{
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
-
     .home h1{
-      margin: 2vw 3vw;
-      font-size: 9vw;
+      margin-top: 1px;
+      font-size: 3vw;
       color: white;
       text-align: center;
-     
     }
 
     span{
@@ -114,24 +81,30 @@ span img:hover {
 
 
 /*--About--*/
-    .about{
-      background-image: url();
-      background-size: cover;
-      background-repeat: no-repeat;
+
+    .Intro {
+      display: flex;
+      align-items: center;
+    }
+
+    .about {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      justify-content: space-between;
     }
 
     .about button {
-      background-image: url(/images/5172658.jpg);
       background-repeat: no-repeat;
       background-size: cover;
-      background-color: #1a73e8;
+      background-color: #9fa0a1;
       border-style: solid;
     }
 
     
 
     .modal-open {
-      font-size: 7vw;
+      font-size: 5vw;
       padding: 8px 20px;
       margin-bottom: 50px;
       background: transparent;
@@ -142,9 +115,10 @@ span img:hover {
       transition: 0.3s;
     }
 
+
     .modal-open:hover{
       opacity: 0.7;
-      color: #e60073;
+      color: #00e645;
       cursor: pointer;
     }
 
@@ -201,6 +175,7 @@ span img:hover {
     .modal-body p{
       text-align: left;
       font-size: 2vw;
+      font-family: 'Courier New', Courier, monospace;
     }
 
     .modal-body h1{
@@ -285,6 +260,97 @@ span img:hover {
     .box2:hover {
       opacity: 0.7;
     }
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  padding: 5px 5px;
+
+  height: 1vw;
+  width: 1vw;
+
+  color: white;
+  font-weight: bold;
+
+  transition: 0.6s ease;
+
+
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+
 /*--/Work--*/
 
 
@@ -357,7 +423,7 @@ span img:hover {
     }
     
     footer{
-        background-color: transparent;
+        background-color: rgb(0, 0, 0, 70%);
     }
 
     .icons{
